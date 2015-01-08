@@ -1,0 +1,24 @@
+---
+layout: default
+title: Thesis Documentation
+---
+
+<div id="home" style="background-color: #000;">
+
+ <div class="posts index-posts" style="float: right;">
+    {% for post in site.posts %}
+      <div><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.url }}/inferno{{ post.url }}">{{ post.title }}</a>
+        <div class="index-posts-content">{{ post.content }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+<div style="float: left;">
+  <h1>Resources</h1>
+  <ul class="posts">
+    <li><span>28 Oct 2014</span> &raquo; <a href="http://y-li.me/">Link</a> for Emily Fuhrman (provided by Tom MacWright).</li>
+  </ul> 
+</div>
+
+
+</div>

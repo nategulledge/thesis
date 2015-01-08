@@ -1,0 +1,27 @@
+---
+layout: default
+title: Thesis Documentation
+---
+
+<div id="home">
+  <div id="page-content" class="blog">
+
+  <section class="categories">
+       <header class="categories-header">Resources</header>
+       <ul>
+       <li><a href="#">All Posts</a></li>
+       <li><a href="#">MFA First Year</a></li>
+       </ul>
+  </section>
+  <div class="clear-fix"></div>
+
+<section class="posts">
+
+{% for post in site.posts %}
+{{ post.content }}
+{% endfor %}
+
+</section>
+
+</div> <!-- class blog -->
+</div> <!-- id home -->
